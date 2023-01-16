@@ -1,24 +1,24 @@
 [
     {
-
+        "img":"./Mockdata/HondaCivic.jpg",
         "model": "Honda Civic",
         "price": "$15,000",
         "condition": "Used, with low mileage and well-maintained"
     },
     {
-
+        "img":"./Mockdata/ToyotaCamry.jpg",
         "model": "Toyota Camry",
         "price": "$20,000",
         "condition": "New, with full warranty and all the latest features"
     },
     {
-
+        "img":"./Mockdata/FordMustang.jpg",
         "model": "Ford Mustang",
         "price": "$25,000",
         "condition": "Used, with some wear and tear, but runs great"
     },
     {
-        
+        "img":"./Mockdata/ChevroletSilverado.jpg", 
         "model": "Chevrolet Silverado",
         "price": "$30,000",
         "condition": "New, with all the latest safety features and a powerful engine"
