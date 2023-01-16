@@ -5,6 +5,9 @@ body {
 
 #headerPosition{
 display: flex;
+justify-content: space-around;
+max-width: 800px;
+min-width: 800px;
 }
 
 /*logo*/
@@ -20,7 +23,6 @@ display: flex;
     width: 70px;
     display: block;
     margin: 0 auto;
-
 }
 
 /*banner*/
