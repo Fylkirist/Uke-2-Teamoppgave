@@ -5,6 +5,7 @@ body {
 
 #headerPosition{
 display: flex;
+position: static;
 justify-content: space-around;
 max-width: 800px;
 min-width: 800px;
