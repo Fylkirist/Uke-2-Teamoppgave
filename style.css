@@ -62,3 +62,12 @@ min-width: 800px;
 .handlevognEmptyIcon{
 
 }
+
+/*annonse*/
+#annonseliste {
+    background-color: #eeeeee;
+    border-radius:7px;
+    width: 787px;
+    height: 100px;
+    margin-top: 10px;
+}
