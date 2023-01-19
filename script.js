@@ -24,7 +24,7 @@ function renderListItems(carInfo)
         shopListElement.innerHTML+=`<div class="bilNavn">${carInfo[i]["model"]}</div>`
         shopListElement.innerHTML+=`<div class="bilPris">${carInfo[i]["price"]}</div>`
         shopListElement.innerHTML+=`<div class="bilTilstand">${carInfo[i]["condition"]}</div>`
-        shopListElement.innerHTML+=`<div class="handlevognEmptyIcon">
+        shopListElement.innerHTML+=`<div class="listHandlevognEmptyIcon">
         <i class="bi bi-cart-plus" class="handlevognPlus"></i></div>`
         shopList.appendChild(shopListElement)
     }
