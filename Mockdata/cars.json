@@ -2,49 +2,49 @@
     {
         "img":"Mockdata/HondaCivic.jpg",
         "model": "Honda Civic",
-        "price": "127,500",
+        "price": "127500",
         "condition": "Brukt, med lav kilometerstand og godt vedlikeholdt"
     },
     {
         "img":"Mockdata/ToyotaCamry.jpg",
         "model": "Toyota Camry",
-        "price": "160,000",
+        "price": "160000",
         "condition": "Ny, med full garanti og alle de nyeste funksjonene"
     },
     {
         "img":"Mockdata/FordMustang.jpg",
         "model": "Ford Mustang",
-        "price": "200,000",
+        "price": "200000",
         "condition": "Brukt, med noe slitasje, men kjører bra"
     },
     {
         "img":"Mockdata/ChevroletSilverado.jpg", 
         "model": "Chevrolet Silverado",
-        "price": "240,000",
+        "price": "240000",
         "condition": "Ny, med alle de nyeste sikkerhetsfunksjonene og en kraftig motor"
     },
     {
         "img":"Mockdata/AudiA4.jpg",
         "model": "Audi A4",
-        "price": "280,000",
+        "price": "280000",
         "condition": "Brukt, med luksusfunksjoner og bra demping"
     },
     {
         "img":"Mockdata/JeepWrangler.jpg",
         "model": "Jeep Wrangler",
-        "price": "224,000",
+        "price": "224000",
         "condition": "Brukt, med firehjulstrekk og en robust design"
     },
     {
         "img":"Mockdata/NissanAltima.jpg",
         "model": "Nissan Altima",
-        "price": "176,000",
+        "price": "176000",
         "condition": "Ny, med en drivstoffeffektiv motor og avansert teknologi"
     },
     {
         "img":"Mockdata/TeslaModel3.jpg",
         "model": "Tesla Model 3",
-        "price": "360,000",
+        "price": "360000",
         "condition": "Ny, med all-elektrisk kraft og avansert teknologi"
     }
 ]
