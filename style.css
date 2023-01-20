@@ -9,12 +9,12 @@ body {
     position: static;
     justify-content: space-around;
     max-width: 800px;
-    min-width: 800px;
+    min-width: 920px;
 }
 
 /*logo*/
 #logo {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     border-radius:7px;
     padding: 10px;
     width: 100px;
@@ -29,10 +29,10 @@ body {
 
 /*banner*/
 #banner {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     border-radius: 7px;
     padding: 10px;
-    width: 500px;
+    width: 600px;
     height: 75px;
     min-width: 250px;
     text-align: center;
@@ -46,7 +46,7 @@ body {
 
 /*handlekurv icon*/
 #handlevogn {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color: #1c1c1c;
     font-size: 50px;
     border-radius:7px;
@@ -67,24 +67,25 @@ body {
 
 /*annonse*/
 #annonseliste {
-    border-radius:7px;
-    width: 787px;
-    height: fit-content;
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 .listElement {
-    margin: 10px auto;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     position: relative;
     height: 200px;
+    width: 425px;
 }
 
 .bilBilde {
     margin-right: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     max-width: 200px;
     max-height: 200px;
     position: absolute;
@@ -94,10 +95,10 @@ body {
 .bilNavn {
     font-size: 20px;
     font-weight: bold;
-    width: 30%;
+    width:100%;
     text-align: left;
     position: absolute;
-    left: 250px;
+    left: 225px;
     top: 20px;
 }
 
@@ -106,7 +107,7 @@ body {
     font-weight: bold;
     text-align: left;
     position: absolute;
-    left: 250px;
+    left: 225px;
     top: 60px;
 }   
 
@@ -115,13 +116,12 @@ body {
     width: 200px;
     text-align: left;
     position: absolute;
-    left: 250px;
+    left: 225px;
     top: 100px;
 }
 
 .listHandlevognEmptyIcon {
     font-size: 20px;
-    width: 15%;
     text-align: left;
     position: absolute;
     left: 400px;
