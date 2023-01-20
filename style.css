@@ -141,21 +141,40 @@ body {
     display: none;
     background-color: white;
     border: solid white 3px;
-    width: fit-content;
+    width: 250px;
+    margin-left: 110px;
+    border-radius: 10px;
 }
 
 .cartElement{
+    margin-top: 10px;
+    border-radius: 10px;
     display: grid;
-    grid-template-columns: 200px 100px 50px;
+    grid-template-columns: 100px 100px 100px 50px;
 
 }
 .cartImg{
+    grid-row: 1;
     grid-column: 1;
-    width: 200px;
+    width: 100px;
+    padding-left: 10px;
 }
 .cartText{
+    grid-row: 1;
+    font-size: 15px;
+    font-weight: bold;
     grid-column: 2;
+    padding-left: 10px;
+    width: 100px;
 }
 .cartKnapp{
+    grid-column: 4;
+    grid-row: 1;
+    padding-left: 10px;
+}
+.cartPrice{
+    grid-row: 1;
+    font-size: 10px;
     grid-column: 3;
+    padding-left: 10px;
 }

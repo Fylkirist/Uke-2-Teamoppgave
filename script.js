@@ -42,9 +42,11 @@ function cartDropDown()
     if (!dropDropdownDisplay){
         cartList.style.display="block"
         renderStorageItems()
+        dropDropdownDisplay=true
     }
     else{
         cartList.style.display="none"
+        dropDropdownDisplay=false
     }
 }
 
@@ -55,7 +57,7 @@ function renderStorageItems()
     {
         let cartListElement = document.createElement("div")
         cartListElement.className="cartElement"
-        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}    ${carArray[storageArray[i]]["price"]}<i onclick="removeFromStorage(${i})" class="cartKnapp bi bi-cart-dash"></i></div>`
+        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}<div class="cartPrice">${carArray[storageArray[i]]["price"]}</div><i onclick="removeFromStorage(${i})" class="cartKnapp bi bi-cart-dash"></i></div>`
         cartList.appendChild(cartListElement)
     }
 }
@@ -73,6 +75,10 @@ function removeFromStorage(element)
     console.log(element)
     console.log(storageArray)
     renderStorageItems()
+    if(storageArray.length==0){
+        dropDropdownDisplay=false
+        cartList.style.display="none"
+    }
 }
 
 cartList.addEventListener("mouseleave",() => {
