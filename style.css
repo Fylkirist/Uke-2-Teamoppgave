@@ -4,11 +4,11 @@ body {
 }
 
 #headerPosition{
-display: flex;
-position: static;
-justify-content: space-around;
-max-width: 800px;
-min-width: 800px;
+    display: flex;
+    position: static;
+    justify-content: space-around;
+    max-width: 800px;
+    min-width: 800px;
 }
 
 /*logo*/
@@ -121,4 +121,17 @@ min-width: 800px;
 
 .handlevognPlus:hover {
     color: #28a745;
+}
+#cartList{
+    display: none;
+}
+
+.cartElement{
+
+}
+.cartImg{
+
+}
+.cartText{
+
 }
