@@ -93,9 +93,9 @@ body {
 }
 
 .bilNavn {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    width:100%;
+    width: 100%;
     text-align: left;
     position: absolute;
     left: 225px;
