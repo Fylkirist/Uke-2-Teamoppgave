@@ -55,7 +55,7 @@ function renderStorageItems()
     {
         let cartListElement = document.createElement("div")
         cartListElement.className="cartElement"
-        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}    ${carArray[storageArray[i]]["price"]}<i onclick="removeFromStorage(${i})" class="bi bi-cart-dash"></i></div>`
+        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}    ${carArray[storageArray[i]]["price"]}<i onclick="removeFromStorage(${i})" class="cartKnapp bi bi-cart-dash"></i></div>`
         cartList.appendChild(cartListElement)
     }
 }

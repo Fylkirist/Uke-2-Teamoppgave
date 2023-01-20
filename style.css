@@ -124,14 +124,23 @@ body {
 }
 #cartList{
     display: none;
+    background-color: white;
+    border: solid white 3px;
+    width: fit-content;
 }
 
 .cartElement{
+    display: grid;
+    grid-template-columns: 200px 100px 50px;
 
 }
 .cartImg{
-
+    grid-column: 1;
+    width: 200px;
 }
 .cartText{
-
+    grid-column: 2;
+}
+.cartKnapp{
+    grid-column: 3;
 }
