@@ -16,6 +16,7 @@ const shopList = document.getElementById('annonseliste')
 
 var storageArray = [];
 
+var dropDropdownDisplay = false
 
 const cartList = document.getElementById("cartList")
 
@@ -38,8 +39,13 @@ function renderListItems(carInfo)
 
 function cartDropDown()
 {
-    cartList.style.display="block"
-    renderStorageItems()
+    if (!dropDropdownDisplay){
+        cartList.style.display="block"
+        renderStorageItems()
+    }
+    else{
+        cartList.style.display="none"
+    }
 }
 
 function renderStorageItems()
@@ -49,7 +55,7 @@ function renderStorageItems()
     {
         let cartListElement = document.createElement("div")
         cartListElement.className="cartElement"
-        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}    ${carArray[storageArray[i]]["price"]}<i class="bi bi-cart-dash"></i></div>`
+        cartListElement.innerHTML+=`<img class="cartImg" src=${carArray[storageArray[i]]["img"]}><div class="cartText">${carArray[storageArray[i]]["model"]}    ${carArray[storageArray[i]]["price"]}<i onclick="removeFromStorage(${i})" class="bi bi-cart-dash"></i></div>`
         cartList.appendChild(cartListElement)
     }
 }
@@ -63,6 +69,13 @@ function addToStorage(element)
 
 function removeFromStorage(element)
 {
-    storageArray.remove(element)
+    storageArray.splice(element,1)
+    console.log(element)
+    console.log(storageArray)
     renderStorageItems()
 }
+
+cartList.addEventListener("mouseleave",() => {
+    dropDropdownDisplay = false
+    cartList.style.display="none"
+})
