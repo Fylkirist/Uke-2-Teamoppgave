@@ -1,5 +1,6 @@
 body {
     background-color: #cccccc;
+    font-family: "Open Sans";
 
 }
 
@@ -66,7 +67,6 @@ body {
 
 /*annonse*/
 #annonseliste {
-    background-color: #eeeeee;
     border-radius:7px;
     width: 787px;
     height: fit-content;
@@ -74,43 +74,58 @@ body {
 }
 
 .listElement {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     margin: 10px auto;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
+    position: relative;
+    height: 200px;
 }
 
 .bilBilde {
-    width: 30%;
     margin-right: 10px;
+    border-radius: 2px;
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    left: 10px;
 }
 
 .bilNavn {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: bold;
     width: 30%;
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    left: 250px;
+    top: 20px;
 }
 
 .bilPris {
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: bold;
-    width: 15%;
-    text-align: center;
-}
+    text-align: left;
+    position: absolute;
+    left: 250px;
+    top: 60px;
+}   
 
 .bilTilstand {
-    font-size: 1rem;
-    width: 35%;
-    text-align: center;
+    font-size: 13px;
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    left: 250px;
+    top: 100px;
 }
 
 .listHandlevognEmptyIcon {
-    width: 10%;
-    cursor: pointer;
+    font-size: 20px;
+    width: 15%;
+    text-align: left;
+    position: absolute;
+    left: 400px;
+    top: 170px;
 }
 
 .handlevognPlus {
